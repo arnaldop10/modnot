@@ -1,0 +1,44 @@
+<h1 class="page-header">{titulo}
+    <small>por <a href="#">{autor}</a>
+    </small>
+</h1>
+
+<!-- Date/Time -->
+<div class="row">
+    <div class="col-md-6">
+        <p><i class="fa fa-clock-o"></i> Publicado el {fecha_publicacion}</p>        
+    </div>
+    <div class="col-md-6">
+        <p><i class="fa fa-"></i></p>
+    </div>
+</div>
+
+<!-- Preview Image -->
+<img class="img-responsive" src="../{imagen}" title="{titulo}">
+
+<br>
+<!-- Post Content -->
+<p>{contenido}</p>
+
+<hr>
+
+<div class="well">
+    <h4>Deja un Comentario:</h4>
+    <form role="form" method="post">
+        <input type="hidden" name="id_articulo" id="id_articulo" value="{id_articulo}">
+        <div class="form-group">
+            <input type="text" class="form-control" name="nombre_comentarista" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="email_comentarista" placeholder="Correo Electronico">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="3" name="comentario" placeholder="Comentario"></textarea>
+        </div>
+        <a href="#" class="btn btn-primary" id="btnComentario">Enviar Comentario</a>
+    </form>
+</div>
+
+<hr>
+
+<div id="comentarios"></div>

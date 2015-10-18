@@ -1,0 +1,62 @@
+<style>
+    #tablaCambiarPregunta th, td {
+        text-align: center;
+    }
+
+    #CambiarPregunta {
+        display: none;
+    }
+</style>
+<h3></h3>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Lista de Usuarios
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover" id="tablaCambiarPregunta">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre de Usuario</th>
+                        <th>Login</th>
+                        <th>Correo Electronico</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                </tbody>
+            </table>
+        </div>
+        <!-- /.table-responsive -->
+    </div>
+    <!-- /.panel-body -->
+</div>
+<div class="panel panel-danger" id="CambiarPregunta">
+    <div class="panel-heading">
+        <h4>Cambiar Pregunta de Seguridad de Usuario: <label id="nombre"></label></h4>
+    </div>
+    <div class="panel-body">
+        <form id="frmCambiaPregunta" method="post">
+            <input type="hidden" name="id_usuario" id="id_usuario">            
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nueva_clave">Nueva Pregunta de Seguridad</label>
+                        <input type="text" name="nueva_pregunta" id="nueva_pregunta" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirmar_clave">Nueva Respuesta de Seguridad</label>
+                        <input type="text" name="nueva_respuesta" id="nueva_respuesta" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="evento" value="cambiar_pregunta">
+                <a href="#" class="btn btn-default" id="btnEnviarPregunta">Actualizar Pregunta</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../public/js/usuario.js"></script>

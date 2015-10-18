@@ -1,0 +1,43 @@
+<div class="container-fluid">					
+	<h1 class="page-header">Eliminar Categorías</h1>
+	
+	<div class="row">
+
+		<div class="col-md-4">
+			<div class="">							
+				<h4>Lista de Categorias</h4>
+				<table class="table table-bordered table-striped" id="tablaCategorias">
+					<thead>
+						<tr>
+							<th class="text-center">ID</th>
+							<th>Categoria</th>							
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="col-md-8">						
+			<div class="well">							
+				<form action="#" method="post">
+					<div class="form-group">
+						<label for="id">Id Categoria</label>
+						<input type="text" name="id_categoria" id="id_categoria" class="form-control" readonly>
+					</div>
+					<div class="form-group">								
+						<label for="categoria">Nombre de Categoria</label>
+						<input type="text" name="nombre_categoria" id="nombre_categoria" class="form-control" readonly>
+					</div>																
+					<a href="#" id="btnEliminar" class="btn btn-danger"><i class="fa fa-remove"></i> Eliminar</a>
+					<input type="hidden" name="evento" value="eliminar_categoria">				
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../public/js/categoria.js"></script>

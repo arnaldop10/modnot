@@ -1,0 +1,31 @@
+<fieldset>
+	<legend>Crear Usuario</legend>
+	<form method="post">
+		<div class="form-group">
+			<input type="text" class="form-control" name="id_usuario" id="id_usuario" placeholder="ID" autofocus>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="nombre_usuario" placeholder="Nombre del Usuario">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="login" placeholder="Login" maxlength="15">
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control" name="clave" maxlength="8" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<input type="email" class="form-control" name="email" placeholder="Correo Electronico">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="pregunta_secreta" placeholder="Pregunta de Seguridad">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="respuesta_secreta" placeholder="Respuesta de Seguridad">
+		</div>
+		<div class="form-group">
+			<a href="#" class="btn btn-danger" id="btnGuardar">Guardar</a>
+			<input type="hidden" name="evento" value="insertar_usuario">
+		</div>
+	</form>
+</fieldset>
+<script src="../public/js/usuario.js"></script>

@@ -1,0 +1,66 @@
+<style>
+    #tablaCambiarClave th, td {
+        text-align: center;
+    }
+
+    #CambiarClave {
+        display: none;
+    }
+</style>
+<h3></h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Lista de Usuarios
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover" id="tablaCambiarClave">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre de Usuario</th>
+                        <th>Login</th>
+                        <th>Correo Electronico</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                </tbody>
+            </table>
+        </div>
+        <!-- /.table-responsive -->
+    </div>
+    <!-- /.panel-body -->
+</div>
+<div class="panel panel-danger" id="CambiarClave">
+    <div class="panel-heading">
+        <h4>Cambiar Clave de Usuario: <label id="nombre"></label></h4>
+    </div>
+    <div class="panel-body">
+        <form id="frmCambiaClave" method="post">
+            <input type="hidden" name="id_usuario" id="id_usuario">
+            <div class="form-group">
+                <label for="clave_actual">Clave Actual</label>
+                <input type="password" name="clave_actual" id="clave_actual" class="form-control" maxlength="8">
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nueva_clave">Nueva Clave</label>
+                        <input type="password" name="nueva_clave" id="nueva_clave" class="form-control" maxlength="8">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirmar_clave">Confirmar Clave</label>
+                        <input type="password" name="confirmar_clave" id="confirmar_clave" class="form-control" maxlength="8">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="evento" value="cambiar_clave">
+                <a href="#" class="btn btn-default" id="btnEnviarClave">Cambiar</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../public/js/usuario.js"></script>

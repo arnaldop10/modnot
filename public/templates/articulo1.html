@@ -1,0 +1,30 @@
+<h2>{titulo}</h2>
+
+<hr>
+
+<div><small>Autor: {autor} | Fecha: {fecha_publicacion} | Categoría: {categoria}</small></div>
+
+<img src="../{imagen}" title="{titulo}" class="img-responsive img-thumbnail">
+
+<p>{contenido}</p>
+
+<hr>
+
+<div class="well">
+    <h4>Deja un Comentario:</h4>
+    <form role="form" method="post">
+        <input type="hidden" name="id_articulo" id="id_articulo" value="{id_articulo}">
+        <div class="form-group">
+            <input type="text" class="form-control" name="nombre_comentarista" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="email_comentarista" placeholder="Correo Electronico">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="3" name="comentario" placeholder="Comentario"></textarea>
+        </div>
+        <a href="#" class="btn btn-primary" id="btnComentario">Enviar Comentario</a>
+    </form>
+</div>
+
+<div id="comentarios"></div>

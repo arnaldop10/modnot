@@ -1,0 +1,62 @@
+<div class="container-fluid">					
+	<h1 class="page-header">Configuración</h1>
+	
+	<div class="row">
+		
+		<div class="col-md-12">						
+			<div class="well">							
+				<form method="post">
+					<div class="form-group">								
+						<label for="nombre_inst_emp">Nombre de la Institución o Empresa</label>
+						<input type="text" name="nombre_inst_emp" id="nombre_inst_emp" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="ruta_circular">Ruta donde se guardan las Circulares</label>
+						<input type="text" id="ruta_circulares" name="ruta_circulares" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="ruta_descargas">Ruta donde se guardan las Descargas</label>
+						<input type="text" id="ruta_descargas" name="ruta_descargas" class="form-control">
+					</div>					
+					<div class="row">
+						<div class="col-md-6">
+							<label for="responder_comentarios">Responder Comentarios</label>
+							<div class="radio">
+								<label>
+									<input type="radio" id="responder_comentarios_si" name="responder_comentarios" value="si"> SI
+								</label>
+								<label>
+									<input type="radio" id="responder_comentarios_no" name="responder_comentarios" value="no"> NO
+								</label>
+							</div>							
+						</div>
+						<div class="col-md-6">
+							<label for="responder_comentarios">Ocultar Comentarios</label>
+							<div class="radio">
+								<label>
+									<input type="radio" id="ocultar_comentarios_si" name="ocultar_comentarios" value="si"> SI
+								</label>
+								<label>
+									<input type="radio" id="ocultar_comentarios_no" name="ocultar_comentarios" value="no"> NO
+								</label>
+							</div>							
+						</div>
+					</div>					
+					<div class="form-group">
+						<label for="ruta_imagenes">Ruta para almacenar las Imágenes</label>
+						<input type="text" name="ruta_imagenes" id="ruta_imagenes" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="noticiasxpaginas">Cantidad de Noticias por Página</label>
+						<input type="number" id="noticiasxpaginas" name="noticiasxpaginas" class="form-control">
+					</div>
+					<a href="#" id="btnGuardar" class="btn btn-danger">Guardar</a>					
+					<input type="hidden" name="evento" id="evento" value="">
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script src="../public/js/configuracion.js"></script>

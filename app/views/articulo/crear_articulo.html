@@ -1,0 +1,71 @@
+	<div class="container-fluid">
+		
+		<h1 class="page-header">Crear Articulo</h1>
+		
+		<div class="row">
+			
+			<div class="col-md-12">
+				
+				<div class="well">
+					
+					<form action="#" method="post" enctype="multipart/form-data">
+
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">						
+									<label for="titulo">Título</label>
+									<input type="text" name="titulo" id="titulo" class="form-control">
+								</div>								
+							</div>
+
+							<div class="col-md-4">								
+								<label for="categoria">Categoría</label>
+								<select name="categoria" id="categoria" class="form-control">	
+								</select>
+							</div>
+						</div>			
+
+						<div class="form-group">							
+							<label for="contenido">Contenido</label>
+							<textarea name="contenido" id="contenido" cols="80" rows="10" class="form-control"></textarea>
+							<!--<input type="hidden" name="contenido" id="contenido" value="">-->
+						</div>
+
+						<div class="form-group">
+							<div class="row">								
+								<div class="col-md-6">
+									<label for="imagen1">Imagen Destacada</label>
+									<input type="file" name="imagen" id="imagen" class="form-control" accept="image/*">
+									<br>
+									<img src="" id="preimg" class="img-thumbnail">
+								</div>
+							</div>
+						</div>
+
+						<div class="text-center">
+							<a href="#" class="btn btn-success btn-lg" id="btnGuardar"><i class="fa fa-save"></i> Guardar</a>
+						<!--	<input type="submit" value="Guardar" name="btnGuardar" class="btn btn-success btn-md">-->
+						</div>
+						<input type="hidden" name="evento" value="insertar_articulo">
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<script src="../vendor/ckeditor/ckeditor.js"></script>-->	
+	<script src="../vendor/tinymce/tinymce.min.js"></script>
+	<script src="../public/js/articulo.js"></script>
+	<script>
+		//CKEDITOR.replace('contenido1');		
+		tinymce.init({
+            selector: "#contenido",
+            language: "es",
+            plugins: [
+				        "advlist autolink lists link image charmap print preview anchor",
+				        "searchreplace visualblocks code fullscreen",
+				        "insertdatetime table contextmenu paste"
+				    ]
+        });
+		
+	</script>

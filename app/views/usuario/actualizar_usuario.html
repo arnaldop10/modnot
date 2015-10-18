@@ -1,0 +1,39 @@
+<h3></h3>
+<fieldset>
+	<legend>Actualizar Usuario</legend>
+	<form method="post">
+		<div class="form-group">
+			<label for="id_usuario">ID Usuario</label>
+			<input type="text" class="form-control" name="id_usuario" id="id_usuario" placeholder="ID" readonly>
+		</div>
+		<div class="form-group">
+			<label for="nombre_usuario">Nombre del Usuario</label>
+			<input type="text" class="form-control" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre del Usuario">
+		</div>
+		<div class="form-group">
+			<label for="login">Login</label>
+			<input type="text" class="form-control" name="login" id="login" placeholder="Login" maxlength="15">
+		</div>
+		<div class="form-group">
+			<label for="password">Clave</label>
+			<input type="password" class="form-control" name="clave" id="clave" maxlength="8" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<label for="email">Correo Electrónico</label>
+			<input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico">
+		</div>
+		<div class="form-group">
+			<label for="pregunta_secreta">Pregunta de Seguridad</label>
+			<input type="text" class="form-control" name="pregunta_secreta" id="pregunta_secreta" placeholder="Pregunta de Seguridad">
+		</div>
+		<div class="form-group">
+			<label for="respuesta_secreta">Respuesta de Seguridad</label>
+			<input type="text" class="form-control" name="respuesta_secreta" id="respuesta_secreta" placeholder="Respuesta de Seguridad">
+		</div>
+		<div class="form-group">
+			<a href="#" class="btn btn-warning" id="btnActualizar">Actualizar</a>
+			<input type="hidden" name="evento" value="actualizar_usuario">
+		</div>
+	</form>
+</fieldset>
+<script src="../public/js/usuario.js"></script>
